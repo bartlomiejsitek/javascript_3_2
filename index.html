@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacje Klimatyczne NOAA</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dostępne Stacje Klimatyczne NOAA</h1>
+        <p>Pobiera listę stacji z interfejsu API NOAA.</p>
+        <button id="fetchStationsButton">Pobierz Stacje</button>
+
+        <div id="loading" class="hidden">Ładowanie danych...</div>
+        <div id="error" class="hidden"></div>
+
+        <table id="stationsTable" class="hidden" border="1">
+            <thead>
+                <tr>
+                    <th>Station ID</th>
+                    <th>Name</th>
+                    <th>State</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody id="stationsTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
